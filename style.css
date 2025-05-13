@@ -14,6 +14,19 @@ header {
     padding: 20px;
     text-align: center;
 }
+/* imagem na Página inicial */
+.home {
+    text-align: center;
+}
+
+.foto-perfil {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 60%;
+    margin-bottom: 20px;
+    border: 4px solid #0077b6;
+}
 
 header h1 {
     margin: 0;
@@ -88,4 +101,120 @@ button:hover {
         display: block;
         margin: 10px 0;
     }
+}
+/* Tela Sobre.html  */
+.sobre {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.sobre h3 {
+    margin-top: 25px;
+    color: #0077b6;
+}
+
+.sobre ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sobre ul li::before {
+    content: "•";
+    color: #0077b6;
+    margin-right: 6px;
+}
+/* Tela formação  */
+.formacao {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Linha do tempo */
+.timeline {
+    border-left: 3px solid #0077b6;
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    background-color: #0077b6;
+    border-radius: 50%;
+}
+
+/* Idiomas */
+.idiomas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.idioma {
+    background-color: #e0f0ff;
+    border-left: 5px solid #0077b6;
+    padding: 15px;
+    border-radius: 5px;
+    flex: 1 1 250px;
+}
+/* Tela portfolio  */
+.portfolio {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #0077b6;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.card a:hover {
+    background-color: #005f87;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }

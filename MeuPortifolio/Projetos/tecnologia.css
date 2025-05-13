@@ -1,0 +1,180 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+#header {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#logo h1 {
+    margin-left: 30px;
+    font-size: 32px;
+}
+
+#logo .white {
+    color: #00bcd4;
+}
+
+/* Menu */
+#menu {
+    margin-right: 30px;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#menu a:hover {
+    color: #00bcd4;
+}
+
+/* Conteúdo principal */
+#content {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 30px;
+    padding: 0 15px;
+}
+
+/* Posts principais */
+#posts {
+    flex: 3;
+}
+
+.post {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.post h2 {
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+.data-post {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.img-post {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.post a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+/* Lado direito */
+#right-side {
+    flex: 1;
+}
+
+.content-right {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.content-right h3 {
+    margin-bottom: 15px;
+    color: #00bcd4;
+}
+
+.post-right {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.post-right a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.post-right a:hover {
+    text-decoration: underline;
+}
+
+.content-right a {
+    color: #00bcd4;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.content-right a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+#footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #222;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    #content {
+        flex-direction: column;
+    }
+
+    #menu {
+        margin-top: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #menu a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    #logo h1 {
+        text-align: center;
+        width: 100%;
+    }
+}
